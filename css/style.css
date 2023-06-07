@@ -66,9 +66,6 @@ table {
 }
 
 @media (max-width: 549px) {
-  body {
-    background-color: lightsalmon;
-  }
   body header {
     height: 100vh;
   }
@@ -103,6 +100,7 @@ header {
     background-color: rgba(117, 117, 117, 0.438);
     position: fixed;
     top: 0;
+    z-index: 4;
     backdrop-filter: blur(6px);
   }
   header .menu ul {
@@ -206,7 +204,7 @@ header {
     position: fixed;
     top: 0;
     backdrop-filter: blur(2px);
-    z-index: 2;
+    z-index: 3;
   }
   header .menu ul {
     width: 100%;
@@ -311,7 +309,7 @@ header {
   header .btn-menu {
     display: block;
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     top: 20px;
     right: 0px;
     bottom: 0px;
@@ -345,7 +343,7 @@ header {
     top: 0px;
     left: -455px;
     bottom: 0px;
-    z-index: 1;
+    z-index: 4;
     width: 90%;
     height: 100vh;
     background-color: rgba(247, 50, 50, 0.596);
@@ -426,7 +424,6 @@ header {
     height: 100vh;
     float: left;
     background-color: #000;
-    border: 1px solid darkmagenta;
   }
   section.about-flash .about-flash__img {
     width: 40%;
@@ -465,7 +462,6 @@ header {
     height: 100vh;
     float: left;
     background-color: #000;
-    border: 1px solid darkmagenta;
   }
   section.about-flash .about-flash__img {
     width: 40%;
@@ -560,42 +556,203 @@ header {
 /*Gallery*/
 @media (min-width: 992px) {
   section.gallery-flash {
+    padding-top: 10%;
     width: 100%;
     float: left;
     height: 100vh;
+    position: relative;
   }
-  section.gallery-flash div {
+  section.gallery-flash #myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+  }
+  section.gallery-flash .gallery-flash__title {
     float: left;
     width: 100%;
     text-align: center;
-    margin: 20px;
+    position: relative;
+    z-index: 2;
+    margin: 20px 0px;
   }
-  section.gallery-flash div h2 {
+  section.gallery-flash .gallery-flash__title h2 {
+    font-size: 6em;
+    margin-bottom: 50px;
+    color: chartreuse;
+  }
+  section.gallery-flash .gallery-flash__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    z-index: 2;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img {
+    width: 32%;
+    float: left;
+    margin-right: 1%;
+    border: 1px solid #fff;
+    height: 300px;
+    overflow: hidden;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img .gallery-flash__picture {
+    width: 100%;
+    max-height: 260px;
+    overflow: hidden;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img .gallery-flash__picture img {
+    width: 100%;
+    transition: all 1s ease;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img .gallery-flash__pic-description {
+    float: left;
+    width: 100%;
+    background-color: #981f11;
+    background: linear-gradient(to left, #981f11 50%, #ffe604 50%) right;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    padding-bottom: 10%;
+    line-height: 40px;
+    transition: all 1s ease;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img .gallery-flash__pic-description p {
+    font-size: 14px;
+    color: #fff;
+    vertical-align: middle;
+    margin-left: 10px;
+    transition: all 1s ease;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img:hover .gallery-flash__picture img {
+    transform: scale(1.2);
+    transition: all 1s ease;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img:hover .gallery-flash__pic-description {
+    background-color: #fff;
+    background-position: left bottom;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img:hover .gallery-flash__pic-description p {
+    color: #981f11;
+    transition: all 1s ease;
+  }
+}
+@media (max-width: 991px) {
+  section.gallery-flash {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  section.gallery-flash #myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+  }
+  section.gallery-flash .gallery-flash__title {
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin: 20px 0px;
+  }
+  section.gallery-flash .gallery-flash__title h2 {
     font-size: 6em;
     color: chartreuse;
   }
   section.gallery-flash .gallery-flash__wrapper {
     width: 80%;
     margin: 0 auto;
+    float: none;
+    position: relative;
+    z-index: 2;
   }
-  section.gallery-flash .gallery-flash__wrapper .gallery-flash__wrapper--box-img {
-    width: 30%;
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img {
+    width: 32%;
     float: left;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 1%;
     border: 1px solid black;
     height: 300px;
+    overflow: hidden;
   }
-  section.gallery-flash .gallery-flash__wrapper .gallery-flash__wrapper--box-img img {
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img .gallery-flash__picture {
     width: 100%;
+    max-height: 260px;
+    overflow: hidden;
   }
-  section.gallery-flash .gallery-flash__wrapper .gallery-flash__wrapper--box-img div {
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img .gallery-flash__picture img {
     width: 100%;
-    position: relative;
-    bottom: 0;
+    transition: all 1s ease;
   }
-  section.gallery-flash .gallery-flash__wrapper .gallery-flash__wrapper--box-img div p {
-    font-size: 16px;
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img .gallery-flash__pic-description {
+    float: left;
+    width: 100%;
+    background-color: #981f11;
+    background: linear-gradient(to left, #981f11 50%, #ffe604 50%) right;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    padding-bottom: 10%;
+    line-height: 40px;
+    transition: all 1s ease;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img .gallery-flash__pic-description p {
+    font-size: 14px;
+    color: #fff;
+    vertical-align: middle;
+    margin-left: 10px;
+    transition: all 1s ease;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img:hover .gallery-flash__picture img {
+    transform: scale(1.2);
+    transition: all 1s ease;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img:hover .gallery-flash__pic-description {
+    background-color: #fff;
+    background-position: left bottom;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img:hover .gallery-flash__pic-description p {
+    color: #981f11;
+    transition: all 1s ease;
+  }
+}
+@media (max-width: 1079px) {
+  section.gallery-flash .gallery-flash__wrapper {
+    width: 30%;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 889px) {
+  section.gallery-flash .gallery-flash__title h2 {
+    font-size: 4.5em;
+  }
+  section.gallery-flash .gallery-flash__wrapper {
+    width: 30%;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 250px;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img .gallery-flash__picture {
+    height: 214px;
+  }
+  section.gallery-flash .gallery-flash__wrapper .gallery-flash__box-img .gallery-flash__picture img {
+    height: 214px;
+  }
+}
+@media (max-width: 459px) {
+  section.gallery-flash .gallery-flash__title h2 {
+    font-size: 2.5em;
+  }
+  section.gallery-flash .gallery-flash__wrapper {
+    width: 70%;
   }
 }
 

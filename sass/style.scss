@@ -44,7 +44,6 @@ body{
     }
 
     @include mqd(550){
-        background-color: lightsalmon;
 
         header{
             height: 100vh;
@@ -75,6 +74,7 @@ header{
             background-color: rgba(117, 117, 117, 0.438);
             position: fixed;
             top: 0;
+            z-index: 4;
             backdrop-filter: blur(6px);
 
             ul{
@@ -198,8 +198,7 @@ header{
             position: fixed;
             top: 0;
             backdrop-filter: blur(2px);
-
-            z-index: 2;
+            z-index: 3;
 
             ul{
                 width: 100%;
@@ -326,7 +325,7 @@ header{
         .btn-menu {
             display: block;
             position: fixed;
-            z-index: 2;
+            z-index: 4;
             top: 20px;  
             right: 0px;
             bottom: 0px;
@@ -365,7 +364,7 @@ header{
             top: 0px;
             left: -455px;
             bottom: 0px;
-            z-index: 1;
+            z-index: 4;
         
             width: 90%;
             height: 100vh;  
@@ -466,8 +465,6 @@ section.about-flash{
         float: left;
         background-color: #000;
 
-        border: 1px solid darkmagenta;
-
         .about-flash__img{
             width: 40%;
             height: 100vh;
@@ -509,8 +506,6 @@ section.about-flash{
         height: 100vh;
         float: left;
         background-color: #000;
-
-        border: 1px solid darkmagenta;
 
         .about-flash__img{
             width: 40%;
@@ -617,15 +612,128 @@ section.about-flash{
 /*Gallery*/
 section.gallery-flash{
     @include mqu(large){
+        padding-top: 10%;
         width: 100%;
         float: left;
         height: 100vh;
+        position: relative;
 
-        div{
+        #myVideo {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: 0;
+        }
+
+
+        .gallery-flash__title{
             float: left;
             width: 100%;
             text-align: center;
-            margin: 20px;
+            position: relative;
+            z-index: 2;
+            margin: 20px 0px;
+            
+            h2{
+                font-size: 6em;
+                margin-bottom: 50px;
+                color: chartreuse;                
+            }
+        }
+
+        .gallery-flash__wrapper{
+            width: 80%;
+            margin: 0 auto;
+            float: none;
+            position: relative;
+            z-index: 2;
+
+            .gallery-flash__box-img{
+                width: 32%;
+                float: left;
+                margin-right: 1%;
+                border: 1px solid #fff;
+                height: 300px;
+                overflow: hidden;
+                
+
+                .gallery-flash__picture{
+                    width: 100%;
+                    max-height: 260px;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        transition:all 1s ease;
+                    }
+                }
+
+                .gallery-flash__pic-description{
+                    float: left;
+                    width: 100%;
+                    background-color: #981f11;
+                    background: linear-gradient(to left, #981f11 50%, #ffe604 50%) right;
+                    background-size: 200% 100%;
+                    background-position:right bottom;
+                    padding-bottom: 10%;
+                    line-height: 40px;
+                    transition:all 1s ease;
+
+                    p{
+                        font-size: 14px;
+                        color: #fff;
+                        vertical-align: middle;
+                        margin-left: 10px;
+                        transition:all 1s ease;
+                    }
+                }
+
+                &:hover{
+                    .gallery-flash__picture{
+                        
+                        img{
+                            transform: scale(1.2);
+                            transition:all 1s ease;
+                        }
+                    }
+
+                    .gallery-flash__pic-description{
+                        background-color: #fff;
+                        background-position: left bottom;
+                        p{
+                            color: #981f11;
+                            transition:all 1s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include mqd(large){
+        width: 100%;
+        float: left;
+        //height: 100vh;
+        position: relative;
+
+        #myVideo {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: 0;
+        }
+
+        .gallery-flash__title{
+            float: left;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            margin: 20px 0px;
             
             h2{
                 font-size: 6em;
@@ -636,28 +744,120 @@ section.gallery-flash{
         .gallery-flash__wrapper{
             width: 80%;
             margin: 0 auto;
+            float: none;
+            position: relative;
+            z-index: 2;
 
-            .gallery-flash__wrapper--box-img{
-                width: 30%;
+            .gallery-flash__box-img{
+                width: 32%;
                 float: left;
-                margin-right: 20px;
-                margin-left: 20px;
+                margin-right: 1%;
                 border: 1px solid black;
                 height: 300px;
+                overflow: hidden;
 
-                img{
+                .gallery-flash__picture{
                     width: 100%;
+                    max-height: 260px;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        transition:all 1s ease;
+                    }
                 }
 
-                div{
+                .gallery-flash__pic-description{
+                    float: left;
                     width: 100%;
-                    position: relative;
-                    bottom: 0;
+                    background-color: #981f11;
+                    background: linear-gradient(to left, #981f11 50%, #ffe604 50%) right;
+                    background-size: 200% 100%;
+                    background-position:right bottom;
+                    padding-bottom: 10%;
+                    line-height: 40px;
+                    transition:all 1s ease;
+
                     p{
-                        font-size: 16px;
+                        font-size: 14px;
+                        color: #fff;
+                        vertical-align: middle;
+                        margin-left: 10px;
+                        transition:all 1s ease;
+                    }
+                }
+                
+                &:hover{
+                    .gallery-flash__picture{
+                        
+                        img{
+                            transform: scale(1.2);
+                            transition:all 1s ease;
+                        }
+                    }
+
+                    .gallery-flash__pic-description{
+                        background-color: #fff;
+                        background-position: left bottom;
+                        p{
+                            color: #981f11;
+                            transition:all 1s ease;
+                        }
                     }
                 }
             }
+        }
+    }
+
+    @include mqd(1080){
+        .gallery-flash__wrapper{
+            
+            width: 30%;
+            
+            .gallery-flash__box-img{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @include mqd(890){
+        .gallery-flash__title{
+
+            h2{
+                font-size: 4.5em;
+            }
+        }
+
+        .gallery-flash__wrapper{
+            width: 30%;
+
+            .gallery-flash__box-img{
+                width: 100%;
+                margin-bottom: 20px;
+                height: 250px;
+
+                .gallery-flash__picture{
+                    height: 214px;
+
+                    img{
+                        height: 214px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    @include mqd(460){
+        .gallery-flash__title{
+            h2{
+                font-size: 2.5em;
+            }
+        }
+
+        .gallery-flash__wrapper{
+            width: 70%;
         }
     }
 }
