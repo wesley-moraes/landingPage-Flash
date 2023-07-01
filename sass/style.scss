@@ -321,7 +321,6 @@ header{
         }
 
         /*Menu*/
-
         .btn-menu {
             display: block;
             position: fixed;
@@ -639,7 +638,7 @@ section.gallery-flash{
             h2{
                 font-size: 6em;
                 margin-bottom: 50px;
-                color: chartreuse;                
+                color: #fff;                
             }
         }
 
@@ -737,7 +736,8 @@ section.gallery-flash{
             
             h2{
                 font-size: 6em;
-                color: chartreuse;                
+                color: #fff;                
+;                
             }
         }
 
@@ -859,5 +859,276 @@ section.gallery-flash{
         .gallery-flash__wrapper{
             width: 70%;
         }
+    }
+}
+
+/*Fans*/
+section.fans-flash{
+    @include mqu(large){
+        width: 100%;
+        height: 100vh;
+        background-color: #f8f8f8;
+        float: left;
+
+        .fans-flash__wrapper{
+
+            width: 95%;
+            left: 50%;
+            top: 16%;
+            position: relative;
+            transform: translateX(-50%);
+            float: left;
+
+
+            .fans-flash__title{
+                float: left;
+                width: 23%;
+                margin-right: 2%;
+
+                div:nth-child(1){
+                    margin-bottom: 60px;
+                    P{
+                        font-size: 29px;
+                        color: #9e9e9e;
+                    }
+                }
+
+                div:nth-child(2){
+                    p{
+                        font-size: 14px;
+                        color: #9e9e9e;
+                    }
+                }
+            }
+
+            .fans-flash__quote{
+                float: left;
+                width: 75%;
+
+                .fans-flash__text{
+                    height: 340px;
+                    width: 100%;
+
+                    span{
+                        font-size: 49px;
+                        margin-right: 10px;
+                        position: relative;
+                        left: -5px;
+                        float: left;
+                    }
+                    p{
+                        font-size: 49px;
+                        margin-top: -12px;
+                    }
+                }
+
+                .fans-flash__person{
+                    float: left;
+                    width: 100%;
+                    border-top: 1px solid #ccc;
+                    padding-top: 20px;
+
+                    .fans-flash__person--img-person{
+                        float: left;
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+
+                        img{
+                            max-width: 80px;
+                            max-height: 80px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .fans-flash__person--person-info{
+                        float: left;
+                        width: 80%;
+                        margin-left: 15px;
+                        margin-top: 15px;
+
+                        .name{
+                            margin-bottom: 5px;
+                            font-size: 30px;
+                        }
+
+                        .job{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include mqd(large){
+        width: 100%;
+        height: 100vh;
+        background-color: #f8f8f8;
+        float: left;
+
+        .fans-flash__wrapper{
+
+            width: 95%;
+            left: 50%;
+            top: 16%;
+            position: relative;
+            transform: translateX(-50%);
+            float: left;
+
+
+            .fans-flash__title{
+                float: left;
+                width: 23%;
+                margin-right: 2%;
+
+                div:nth-child(1){
+                    margin-bottom: 60px;
+                    P{
+                        font-size: 29px;
+                        color: #9e9e9e;
+                    }
+                }
+
+                div:nth-child(2){
+                    p{
+                        font-size: 14px;
+                        color: #9e9e9e;
+                    }
+                }
+            }
+
+            .fans-flash__quote{
+                float: left;
+                width: 75%;
+
+                .fans-flash__text{
+                    height: 340px;
+                    width: 100%;
+
+                    span{
+                        font-size: 49px;
+                        margin-right: 10px;
+                        position: relative;
+                        left: -5px;
+                        float: left;
+                    }
+                    p{
+                        font-size: 49px;
+                        margin-top: -12px;
+                    }
+                }
+
+                .fans-flash__person{
+                    float: left;
+                    width: 100%;
+                    border-top: 1px solid #ccc;
+                    padding-top: 20px;
+
+                    .fans-flash__person--img-person{
+                        float: left;
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+
+                        img{
+                            max-width: 80px;
+                            max-height: 80px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .fans-flash__person--person-info{
+                        float: left;
+                        width: 80%;
+                        margin-left: 15px;
+                        margin-top: 15px;
+
+                        .name{
+                            margin-bottom: 5px;
+                            font-size: 30px;
+                        }
+
+                        .job{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include mqd(820){
+
+        .fans-flash__wrapper{
+            width: 98%;
+            
+            .fans-flash__title{
+                width: 100%;
+
+                div:nth-child(1){
+                    margin-bottom: 30px;
+                }
+            
+                div:nth-child(2){
+                    display: none;
+                }
+            }
+            
+            .fans-flash__quote{
+                width: 90%;
+                margin-left: 3%;
+
+                .fans-flash__text{
+                    span{
+                        color: rgba(224, 219, 219, 0.63);
+                        position: absolute;
+                        left: -1%;
+                        top: 20px;
+                        font-size: 120px;                    
+                    }
+
+                    p{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    @include mqd(500){
+        .fans-flash__wrapper{
+            .fans-flash__title{
+                div:nth-child(1){
+                    margin-bottom: 60px;
+                }
+            }
+            .fans-flash__quote{
+                .fans-flash__text{
+                    height: 250px;
+
+                    p{
+                        font-size: 32px;
+                    }
+                }
+            }
+
+            .fans-flash__quote{
+                .fans-flash__person{
+                    .fans-flash__person--person-info{
+                        width: 65%;
+    
+                        .name{
+                            font-size: 20px;
+                        }
+                        .job{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }

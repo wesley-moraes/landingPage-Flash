@@ -581,7 +581,7 @@ header {
   section.gallery-flash .gallery-flash__title h2 {
     font-size: 6em;
     margin-bottom: 50px;
-    color: chartreuse;
+    color: #fff;
   }
   section.gallery-flash .gallery-flash__wrapper {
     width: 80%;
@@ -662,7 +662,7 @@ header {
   }
   section.gallery-flash .gallery-flash__title h2 {
     font-size: 6em;
-    color: chartreuse;
+    color: #fff;
   }
   section.gallery-flash .gallery-flash__wrapper {
     width: 80%;
@@ -753,6 +753,218 @@ header {
   }
   section.gallery-flash .gallery-flash__wrapper {
     width: 70%;
+  }
+}
+
+/*Fans*/
+@media (min-width: 992px) {
+  section.fans-flash {
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f8f8;
+    float: left;
+  }
+  section.fans-flash .fans-flash__wrapper {
+    width: 95%;
+    left: 50%;
+    top: 16%;
+    position: relative;
+    transform: translateX(-50%);
+    float: left;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__title {
+    float: left;
+    width: 23%;
+    margin-right: 2%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__title div:nth-child(1) {
+    margin-bottom: 60px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__title div:nth-child(1) P {
+    font-size: 29px;
+    color: #9e9e9e;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__title div:nth-child(2) p {
+    font-size: 14px;
+    color: #9e9e9e;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote {
+    float: left;
+    width: 75%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__text {
+    height: 340px;
+    width: 100%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__text span {
+    font-size: 49px;
+    margin-right: 10px;
+    position: relative;
+    left: -5px;
+    float: left;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__text p {
+    font-size: 49px;
+    margin-top: -12px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--img-person {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--img-person img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--person-info {
+    float: left;
+    width: 80%;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--person-info .name {
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--person-info .job {
+    font-size: 15px;
+  }
+}
+@media (max-width: 991px) {
+  section.fans-flash {
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f8f8;
+    float: left;
+  }
+  section.fans-flash .fans-flash__wrapper {
+    width: 95%;
+    left: 50%;
+    top: 16%;
+    position: relative;
+    transform: translateX(-50%);
+    float: left;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__title {
+    float: left;
+    width: 23%;
+    margin-right: 2%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__title div:nth-child(1) {
+    margin-bottom: 60px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__title div:nth-child(1) P {
+    font-size: 29px;
+    color: #9e9e9e;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__title div:nth-child(2) p {
+    font-size: 14px;
+    color: #9e9e9e;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote {
+    float: left;
+    width: 75%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__text {
+    height: 340px;
+    width: 100%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__text span {
+    font-size: 49px;
+    margin-right: 10px;
+    position: relative;
+    left: -5px;
+    float: left;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__text p {
+    font-size: 49px;
+    margin-top: -12px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--img-person {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--img-person img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--person-info {
+    float: left;
+    width: 80%;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--person-info .name {
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--person-info .job {
+    font-size: 15px;
+  }
+}
+@media (max-width: 819px) {
+  section.fans-flash .fans-flash__wrapper {
+    width: 98%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__title {
+    width: 100%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__title div:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__title div:nth-child(2) {
+    display: none;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote {
+    width: 90%;
+    margin-left: 3%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__text span {
+    color: rgba(224, 219, 219, 0.63);
+    position: absolute;
+    left: -1%;
+    top: 20px;
+    font-size: 120px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__text p {
+    font-size: 40px;
+  }
+}
+@media (max-width: 499px) {
+  section.fans-flash .fans-flash__wrapper .fans-flash__title div:nth-child(1) {
+    margin-bottom: 60px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__text {
+    height: 250px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__text p {
+    font-size: 32px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--person-info {
+    width: 65%;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--person-info .name {
+    font-size: 20px;
+  }
+  section.fans-flash .fans-flash__wrapper .fans-flash__quote .fans-flash__person .fans-flash__person--person-info .job {
+    font-size: 13px;
   }
 }
 
