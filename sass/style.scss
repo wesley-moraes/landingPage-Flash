@@ -914,11 +914,13 @@ section.fans-flash{
                         margin-right: 10px;
                         position: relative;
                         left: -5px;
-                        float: left;
+                        color: #ccc;
+                        
                     }
                     p{
                         font-size: 49px;
                         margin-top: -12px;
+                        // float: left;
                     }
                 }
 
@@ -1012,10 +1014,12 @@ section.fans-flash{
                         position: relative;
                         left: -5px;
                         float: left;
+                        color: #ccc;
                     }
                     p{
                         font-size: 49px;
                         margin-top: -12px;
+                        float: left;
                     }
                 }
 
@@ -1040,17 +1044,17 @@ section.fans-flash{
 
                     .fans-flash__person--person-info{
                         float: left;
-                        width: 80%;
+                        width: 60%;
                         margin-left: 15px;
                         margin-top: 15px;
 
                         .name{
                             margin-bottom: 5px;
-                            font-size: 30px;
+                            font-size: 26px;
                         }
 
                         .job{
-                            font-size: 15px;
+                            font-size: 13px;
                         }
                     }
                 }
@@ -1130,5 +1134,67 @@ section.fans-flash{
             }
         }
         
+    }
+
+    @include mqd(460){
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        .fans-flash__wrapper{
+            .fans-flash__title{
+                div:nth-child(1){
+                    margin-bottom: 30px;
+
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .fans-flash__quote{
+                .fans-flash__text{
+                    height: 250px;
+
+                    p{
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .fans-flash__quote{
+                .fans-flash__text{
+                    height: 180px;
+
+                    span{
+                        font-size: 50px;
+                        top: 30px;
+                    }
+                }
+
+                .fans-flash__person{
+                    .fans-flash__person--img-person{
+                        width: 70px;
+                        height: 70px;
+
+                        img{
+                            width: 70px;
+                            height: 70px;
+                        }
+                    }
+
+                    .fans-flash__person--person-info{
+                        width: 65%;
+                        margin-left: 8px;
+                        
+                        .name{
+                            font-size: 16px;
+                        }
+                        .job{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
