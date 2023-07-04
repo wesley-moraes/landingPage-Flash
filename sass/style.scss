@@ -1198,3 +1198,53 @@ section.fans-flash{
         }
     }
 }
+
+/*footer*/
+footer{
+    @include mqu(large){
+        width: 100%;
+        float: left;
+        height: 100vh;
+        background-color: #700e07;
+
+        .container{
+            margin-top: 90px;
+            width: 92%;
+            margin: 100px auto 0 auto;   
+            
+            .logo-footer{
+                width: 100%;
+                margin-bottom: 70px;
+
+                i{
+                    font-size: 24px;
+                    color: #ffebeb;
+                    margin-right: 10px;
+                }
+
+                a{
+                    color: #ffebeb;
+                    font-size: 26px;
+
+                }
+            }
+
+            .footer-wrapper{
+
+                .footer__box-left{
+                    max-width: 550px;
+                    float: left;
+
+                    h2{
+                        font-size: 50px;
+                        margin-bottom: 20px;
+                    }
+
+                    p{
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+}

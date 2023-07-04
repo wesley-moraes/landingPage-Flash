@@ -1014,4 +1014,43 @@ header {
   }
 }
 
+/*footer*/
+@media (min-width: 992px) {
+  footer {
+    width: 100%;
+    float: left;
+    height: 100vh;
+    background-color: #700e07;
+  }
+  footer .container {
+    margin-top: 90px;
+    width: 92%;
+    margin: 100px auto 0 auto;
+  }
+  footer .container .logo-footer {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  footer .container .logo-footer i {
+    font-size: 24px;
+    color: #ffebeb;
+    margin-right: 10px;
+  }
+  footer .container .logo-footer a {
+    color: #ffebeb;
+    font-size: 26px;
+  }
+  footer .container .footer-wrapper .footer__box-left {
+    max-width: 550px;
+    float: left;
+  }
+  footer .container .footer-wrapper .footer__box-left h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  footer .container .footer-wrapper .footer__box-left p {
+    color: #ccc;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
