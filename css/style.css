@@ -1024,7 +1024,7 @@ header {
   }
   footer .container {
     margin-top: 90px;
-    width: 92%;
+    width: 95%;
     margin: 100px auto 0 auto;
   }
   footer .container .logo-footer {
@@ -1047,9 +1047,159 @@ header {
   footer .container .footer-wrapper .footer__box-left h2 {
     font-size: 50px;
     margin-bottom: 20px;
+    color: #ffffff;
   }
   footer .container .footer-wrapper .footer__box-left p {
     color: #ccc;
+    margin-bottom: 20px;
+  }
+  footer .container .footer-wrapper .footer__box-left button {
+    margin: 0 0 20px 0;
+    position: relative;
+    border-radius: 20px;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    transition: 0.2s;
+  }
+  footer .container .footer-wrapper .footer__box-left button:hover {
+    letter-spacing: 0.2rem;
+    padding: 1.1rem 3.1rem;
+    background: var(--clr);
+    color: var(--clr);
+    /* box-shadow: 0 0 35px var(--clr); */
+    animation: box 3s infinite;
+  }
+  footer .container .footer-wrapper .footer__box-left button:hover i::before {
+    width: 15px;
+    left: 20%;
+    animation: move 3s infinite;
+  }
+  footer .container .footer-wrapper .footer__box-left button:hover i::after {
+    width: 15px;
+    left: 80%;
+    animation: move 3s infinite;
+  }
+  footer .container .footer-wrapper .footer__box-left button::before {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    inset: 2px;
+    background: #282322;
+  }
+  footer .container .footer-wrapper .footer__box-left button span {
+    position: relative;
+    z-index: 1;
+  }
+  footer .container .footer-wrapper .footer__box-left button i {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  footer .container .footer-wrapper .footer__box-left button i::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 80%;
+    top: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+  }
+  footer .container .footer-wrapper .footer__box-left button i::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 20%;
+    bottom: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes box {
+    0% {
+      box-shadow: #27272c;
+    }
+    50% {
+      box-shadow: 0 0 25px var(--clr);
+    }
+    100% {
+      box-shadow: #27272c;
+    }
+  }
+  footer .container .footer-wrapper .footer__box-left a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  footer .container .footer-wrapper .footer__box-right {
+    float: left;
+    width: 56%;
+  }
+  footer .container .footer-wrapper .footer__box-right .footer__navs .nav-col {
+    max-width: 192px;
+    float: left;
+    margin-right: 15%;
+  }
+  footer .container .footer-wrapper .footer__box-right .footer__navs .nav-col h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f8f8f8;
+  }
+  footer .container .footer-wrapper .footer__box-right .footer__navs .nav-col ul li {
+    font-size: 18px;
+    color: #f8f8f8;
+    margin-bottom: 15px;
+  }
+  footer .container .footer-wrapper .footer__box-right .footer__navs .nav-col ul li a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 20px;
+  }
+  footer .container .footer-wrapper .footer__box-right .footer__navs .nav-col ul li a i {
+    float: right;
+    margin-left: 25px;
+  }
+  footer .container .footer-wrapper .footer__box-right .footer__navs .nav-col:nth-child(3) {
+    margin-right: 0;
+    float: right;
+  }
+  footer .container .footer-wrapper .footer__end {
+    width: 100%;
+    float: left;
+    margin-top: 70px;
+  }
+  footer .container .footer-wrapper .footer__end p {
+    color: #ccc;
+  }
+  footer .container .footer-wrapper .footer__end p a {
+    color: #c2c2c2;
+  }
+  footer .container .footer-wrapper .footer__end .btn-totop {
+    float: right;
+    text-decoration: none;
+    color: #c2c2c2;
+  }
+  footer .container .footer-wrapper .footer__end .btn-totop:hover {
+    color: rgb(233, 210, 0);
   }
 }
 
