@@ -100,7 +100,7 @@ header {
     background-color: rgba(117, 117, 117, 0.438);
     position: fixed;
     top: 0;
-    z-index: 4;
+    z-index: 99;
     backdrop-filter: blur(6px);
   }
   header .menu ul {
@@ -156,6 +156,7 @@ header {
     position: fixed;
     top: 0;
     backdrop-filter: blur(2px);
+    z-index: 99;
   }
   header .menu ul {
     width: 50%;
@@ -760,7 +761,8 @@ header {
 @media (min-width: 992px) {
   section.fans-flash {
     width: 100%;
-    height: 100vh;
+    padding-bottom: 60px;
+    padding-top: 60px;
     background-color: #f8f8f8;
     float: left;
   }
@@ -841,7 +843,8 @@ header {
 @media (max-width: 991px) {
   section.fans-flash {
     width: 100%;
-    height: 100vh;
+    padding-bottom: 60px;
+    padding-top: 60px;
     background-color: #f8f8f8;
     float: left;
   }

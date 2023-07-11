@@ -74,7 +74,7 @@ header{
             background-color: rgba(117, 117, 117, 0.438);
             position: fixed;
             top: 0;
-            z-index: 4;
+            z-index: 99;
             backdrop-filter: blur(6px);
 
             ul{
@@ -141,6 +141,7 @@ header{
             position: fixed;
             top: 0;
             backdrop-filter: blur(2px);
+            z-index: 99;
 
             ul{
                 width: 50%;
@@ -866,7 +867,8 @@ section.gallery-flash{
 section.fans-flash{
     @include mqu(large){
         width: 100%;
-        height: 100vh;
+        padding-bottom: 60px;
+        padding-top: 60px;
         background-color: #f8f8f8;
         float: left;
 
@@ -965,7 +967,8 @@ section.fans-flash{
 
     @include mqd(large){
         width: 100%;
-        height: 100vh;
+        padding-bottom: 60px;
+        padding-top: 60px;
         background-color: #f8f8f8;
         float: left;
 
