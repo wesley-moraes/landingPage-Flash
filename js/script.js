@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var nav = document.getElementById("nav-menu");
     var showMenu = document.getElementById("showMenu");
     var hideMenu = document.getElementById("hideMenu");
+
     showMenu.addEventListener("click", function () {
         nav.classList.add("show");
         console.log("tranquilo");
@@ -21,5 +22,16 @@ document.addEventListener("DOMContentLoaded", function(){
             nav.classList.remove("show");
         }
     });
+
+    var linksMenu = nav.querySelectorAll("a");
+    linksMenu.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            nav.classList.remove("show");
+        });
+    });
+
+    console.log(linksMenu);
+    
+
 
 });
