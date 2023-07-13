@@ -721,6 +721,9 @@ header {
   }
 }
 @media (max-width: 1079px) {
+  section.gallery-flash {
+    height: auto;
+  }
   section.gallery-flash .gallery-flash__wrapper {
     width: 30%;
   }

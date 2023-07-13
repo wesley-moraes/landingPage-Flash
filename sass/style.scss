@@ -811,6 +811,8 @@ section.gallery-flash{
     }
 
     @include mqd(1080){
+        height: auto;
+
         .gallery-flash__wrapper{
             
             width: 30%;
