@@ -10,7 +10,7 @@ O Flash, também conhecido como Barry Allen, é um dos super-heróis mais icôni
 
 # Instalação
 ```
-git clone git@github.com:moraesWesley/https://github.com/wesley-moraes/landingPage-Flash.git
+git clone git@github.com:moraesWesley/landingPage-Flash.git
 cd landingPage-Flash
 npm install live-server
 ```
